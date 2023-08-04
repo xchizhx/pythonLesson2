@@ -1,5 +1,11 @@
-i = []
+import time
 
-i.append(1)
-i.append(2)
-print(len(i))
+h = int(input())
+
+while True:
+    time.sleep(1)
+    h -= 1
+    print(h)
+    if h == 0:
+        print("Бум!")
+        break
